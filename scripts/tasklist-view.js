@@ -83,6 +83,7 @@ class TaskList {
 			s.tasks.splice(taskIndex, 1);
 		});
 		this.#data = this.#data.filter((s) => s.tasks.length > 0);
+		this.#render();
 		return this;
 	}
 

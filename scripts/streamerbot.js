@@ -79,8 +79,8 @@ async function onConnect() {
 function transformToSections(users) {
 	return Object.entries(users).map(([userId, userData]) => ({
 		id: userId,
-		title: userData.username,
-		tasks: userData.tasks.map((task) => ({
+		title: userData.Username,
+		tasks: userData.Tasks.map((task) => ({
 			text: task.Name,
 			done: task.Completed,
 			focused: task.Focused,
