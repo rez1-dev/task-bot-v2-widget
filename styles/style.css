@@ -4,8 +4,8 @@
    ======================================== */
 :root {
 	/* -- Background & Panel -- */
-	--panel-header-background: #141414;
-	--panel-background: #141414c0; /* Main background color */
+	--panel-header-background: #141414; /* Header background color */
+	--panel-background: #141414c0; /* Body background color */
 	--panel-border-radius: 12px; /* Roundness of panel corners */
 
 	/* -- Text Colors -- */
