@@ -7,7 +7,18 @@ const configs = (function () {
 		endpoint: "/",
 	};
 
+	const commands = [
+		"!taskhelp",
+		"!add",
+		"!edit",
+		"!done",
+		"!remove",
+		"!focus",
+		"!clearmydone",
+	];
+
 	return {
 		StreamerBotSettings,
+		commands,
 	};
 })();
