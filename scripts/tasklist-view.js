@@ -278,9 +278,14 @@ class TaskList {
 			(task.done ? " done" : "") +
 			(task.focused ? " focused" : "");
 		div.dataset.text = task.text;
-		div.innerHTML =
-			`<span class="task-number">${index + 1}.</span>` +
-			`<span>${task.text}</span>`;
+		const numberSpan = document.createElement("span");
+		numberSpan.className = "task-number";
+		numberSpan.textContent = `${index + 1}.`;
+
+		const textSpan = document.createElement("span");
+		textSpan.textContent = task.text;
+
+		div.replaceChildren(numberSpan, textSpan);
 		return div;
 	}
 
